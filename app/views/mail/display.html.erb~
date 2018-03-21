@@ -1,0 +1,14 @@
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+  <%= form_tag("/display") do %>
+    <%= label_tag(:to, "To:") %>
+    <%= text_field_tag(:to) %><br>
+	<%= label_tag(:sub, "Subject:") %>
+    <%= text_field_tag(:sub) %><br>
+	<%= label_tag(:body, "Body:") %>
+    <%= text_area_tag(:body) %><br>
+    <%= submit_tag("Send") %>
+  <% end %>
+
+
